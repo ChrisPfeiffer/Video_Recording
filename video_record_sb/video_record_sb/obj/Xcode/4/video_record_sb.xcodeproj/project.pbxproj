@@ -1,0 +1,226 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD77A8200000000000000000 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106887200000000000000000 /* UIKit.framework */; };
+		2E6D1DB50000000000000000 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE2A530000000000000000 /* MapKit.framework */; };
+		3A0864D00000000000000000 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73192EB00000000000000000 /* Foundation.framework */; };
+		370B68960000000000000000 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9C75340000000000000000 /* CoreGraphics.framework */; };
+		FC651F000000000000000000 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48D71BD00000000000000000 /* Info.plist */; };
+		346747680000000000000000 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37F854060000000000000000 /* Entitlements.plist */; };
+		229208520000000000000000 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 262314F00000000000000000 /* MainStoryboard.storyboard */; };
+		27D229B10000000000000000 /* AppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 2B63364F0000000000000000 /* AppDelegate.h */; };
+		294E5B560000000000000000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CDF67F40000000000000000 /* AppDelegate.m */; };
+		2CAC84D80000000000000000 /* video_record_sbViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 303D91760000000000000000 /* video_record_sbViewController.h */; };
+		3E4EE0D20000000000000000 /* video_record_sbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFED7000000000000000000 /* video_record_sbViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35AA1E2C0000000000000000 /* video_record_sb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "video_record_sb.app"; path = "video_record_sb.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		106887200000000000000000 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "UIKit.framework"; path = "System/Library/Frameworks/UIKit.framework"; sourceTree = SDKROOT; };
+		31FE2A530000000000000000 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "MapKit.framework"; path = "System/Library/Frameworks/MapKit.framework"; sourceTree = SDKROOT; };
+		73192EB00000000000000000 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Foundation.framework"; path = "System/Library/Frameworks/Foundation.framework"; sourceTree = SDKROOT; };
+		3A9C75340000000000000000 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreGraphics.framework"; path = "System/Library/Frameworks/CoreGraphics.framework"; sourceTree = SDKROOT; };
+		48D71BD00000000000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info.plist"; path = "Info.plist"; sourceTree = "<group>"; };
+		37F854060000000000000000 /* Entitlements.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Entitlements.plist"; path = "Entitlements.plist"; sourceTree = "<group>"; };
+		262314F00000000000000000 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "MainStoryboard.storyboard"; path = "MainStoryboard.storyboard"; sourceTree = "<group>"; };
+		2B63364F0000000000000000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AppDelegate.h"; path = "AppDelegate.h"; sourceTree = "<group>"; };
+		2CDF67F40000000000000000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AppDelegate.m"; path = "AppDelegate.m"; sourceTree = "<group>"; };
+		303D91760000000000000000 /* video_record_sbViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "video_record_sbViewController.h"; path = "video_record_sbViewController.h"; sourceTree = "<group>"; };
+		1DFED7000000000000000000 /* video_record_sbViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "video_record_sbViewController.m"; path = "video_record_sbViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		297AC6AD0000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD77A8200000000000000000 /* UIKit.framework in Frameworks */,
+				2E6D1DB50000000000000000 /* MapKit.framework in Frameworks */,
+				3A0864D00000000000000000 /* Foundation.framework in Frameworks */,
+				370B68960000000000000000 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		994383B00000000000000000 = {
+			isa = PBXGroup;
+			children = (
+				342DEC870000000000000000 /* video_record_sb */,
+				14475E150000000000000000 /* Frameworks */,
+				3EE112610000000000000000 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3EE112610000000000000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35AA1E2C0000000000000000 /* video_record_sb.app */,
+			);
+			name = "Products";
+			sourceTree = "<group>";
+		};
+		14475E150000000000000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				106887200000000000000000 /* UIKit.framework */,
+				31FE2A530000000000000000 /* MapKit.framework */,
+				73192EB00000000000000000 /* Foundation.framework */,
+				3A9C75340000000000000000 /* CoreGraphics.framework */,
+			);
+			name = "Frameworks";
+			sourceTree = "<group>";
+		};
+		342DEC870000000000000000 /* video_record_sb */ = {
+			isa = PBXGroup;
+			children = (
+				2B63364F0000000000000000 /* AppDelegate.h */,
+				37F854060000000000000000 /* Entitlements.plist */,
+				48D71BD00000000000000000 /* Info.plist */,
+				262314F00000000000000000 /* MainStoryboard.storyboard */,
+				303D91760000000000000000 /* video_record_sbViewController.h */,
+				35E3790D0000000000000000 /* Supporting Files */,
+			);
+			name = "video_record_sb";
+			sourceTree = "<group>";
+		};
+		35E3790D0000000000000000 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2CDF67F40000000000000000 /* AppDelegate.m */,
+				1DFED7000000000000000000 /* video_record_sbViewController.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DEF5B9C0000000000000000 /* video_record_sb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AF6F8520000000000000000 /* Build configuration list for PBXNativeTarget "video_record_sb" */;
+			buildPhases = (
+				17A587970000000000000000 /* Sources */,
+				297AC6AD0000000000000000 /* Frameworks */,
+				902722000000000000000000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "video_record_sb";
+			productName = "video_record_sb";
+			productReference = 35AA1E2C0000000000000000 /* video_record_sb.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		233C35C20000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2043D2780000000000000000 /* Build configuration list for PBXProject "video_record_sb" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 994383B00000000000000000;
+			productRefGroup = 3EE112610000000000000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DEF5B9C0000000000000000 /* video_record_sb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		902722000000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC651F000000000000000000 /* Info.plist in Resources */,
+				346747680000000000000000 /* Entitlements.plist in Resources */,
+				229208520000000000000000 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17A587970000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D229B10000000000000000 /* AppDelegate.h in Sources */,
+				294E5B560000000000000000 /* AppDelegate.m in Sources */,
+				2CAC84D80000000000000000 /* video_record_sbViewController.h in Sources */,
+				3E4EE0D20000000000000000 /* video_record_sbViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21C0041D0000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = MonoTouch;
+		};
+		1590AC9E0000000000000000 /* MonoTouch */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				PRODUCT_NAME = "video_record_sb";
+				WRAPPER_EXTENSION = app;
+			};
+			name = MonoTouch;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2043D2780000000000000000 /* Build configuration list for PBXProject "video_record_sb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C0041D0000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+		2AF6F8520000000000000000 /* Build configuration list for PBXNativeTarget "video_record_sb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1590AC9E0000000000000000 /* MonoTouch */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = MonoTouch;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 233C35C20000000000000000 /* Project object */;
+}

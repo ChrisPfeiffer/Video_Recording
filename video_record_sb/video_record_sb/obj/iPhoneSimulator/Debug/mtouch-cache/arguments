@@ -1,0 +1,27 @@
+# Version: 7.2.6.28 (606f31a)
+# [first argument, ignore] # /Users/christopherpfeiffer/Projects/Video_Recording/video_record_sb/video_record_sb/bin/iPhoneSimulator/Debug/mtouch.exe
+/Developer/MonoTouch/usr/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/christopherpfeiffer/Projects/Video_Recording/video_record_sb/video_record_sb/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Users/christopherpfeiffer/Projects/Video_Recording/video_record_sb/video_record_sb/bin/iPhoneSimulator/Debug/video_record_sb.app \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Developer/MonoTouch/usr/lib/mono/2.1/monotouch.dll \
+	-debug \
+	-nolink \
+	-sdk \
+	7.1 \
+	-targetver \
+	7.0 \
+	--abi=i386 \
+	/Users/christopherpfeiffer/Projects/Video_Recording/video_record_sb/video_record_sb/bin/iPhoneSimulator/Debug/video_record_sb.exe \

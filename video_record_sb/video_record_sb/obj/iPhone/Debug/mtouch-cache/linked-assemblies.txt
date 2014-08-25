@@ -1,0 +1,4 @@
+/Users/christopherpfeiffer/Projects/Video_Recording/video_record_sb/video_record_sb/obj/iPhone/Debug/mtouch-cache/Link/monotouch.dll
+/Users/christopherpfeiffer/Projects/Video_Recording/video_record_sb/video_record_sb/obj/iPhone/Debug/mtouch-cache/Link/System.dll
+/Users/christopherpfeiffer/Projects/Video_Recording/video_record_sb/video_record_sb/obj/iPhone/Debug/mtouch-cache/Link/video_record_sb.exe
+/Users/christopherpfeiffer/Projects/Video_Recording/video_record_sb/video_record_sb/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
