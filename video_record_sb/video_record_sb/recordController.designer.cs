@@ -16,6 +16,10 @@ namespace video_record_sb
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnDone { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton btnStartRecording { get; set; }
 
 		[Outlet]
@@ -24,6 +28,10 @@ namespace video_record_sb
 
 		void ReleaseDesignerOutlets ()
 		{
+			if (btnDone != null) {
+				btnDone.Dispose ();
+				btnDone = null;
+			}
 			if (btnStartRecording != null) {
 				btnStartRecording.Dispose ();
 				btnStartRecording = null;

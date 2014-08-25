@@ -27,7 +27,9 @@ namespace video_record_sb
 			weAreRecording = false;
 			lblError.Hidden = true;
 
+			Console.WriteLine ("here");
 			btnStartRecording.SetTitle("Start Recording", UIControlState.Normal);
+
 
 			//assign eventhandler to record toggler
 
@@ -65,7 +67,7 @@ namespace video_record_sb
 			//AVCaptureVideoDataOutput output = new AVCaptureVideoDataOutput ();
 			output = new AVCaptureMovieFileOutput ();
 
-			long totalSeconds = 60;
+			long totalSeconds = 10000;
 			Int32 preferredTimeScale = 30;
 			CMTime maxDuration = new CMTime (totalSeconds, preferredTimeScale);
 			output.MinFreeDiskSpaceLimit = 1024 * 1024;
@@ -83,7 +85,7 @@ namespace video_record_sb
 			btnStartRecording.TouchUpInside += startStopPushed;
 
 
-			Console.ReadLine ();
+			//Console.ReadLine ();
 
 		}
 
@@ -103,7 +105,9 @@ namespace video_record_sb
 				NSError error = new NSError ();
 
 				if (manager.FileExists (urlpath)) {
+					Console.WriteLine ("Deleting File");
 					manager.Remove (urlpath, out error);
+					Console.WriteLine ("Deleted File");
 				}
 
 				AVCaptureFileOutputRecordingDelegate avDel= new AVCaptureFileOutputRecordingDelegate ();

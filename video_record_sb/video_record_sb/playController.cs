@@ -45,6 +45,12 @@ namespace video_record_sb
 			_playerLayer.Frame = View.Frame;
 			View.Layer.AddSublayer (_playerLayer);
 
+			//this code makes UI controls sit on top of the preview layer!  Allows you to just place the controls in interface builder
+			UIView cameraView = new UIView ();
+			this.View.AddSubview (cameraView);
+			this.View.SendSubviewToBack (cameraView);
+			cameraView.Layer.AddSublayer (_playerLayer);
+
 			_player.Play ();
 
 

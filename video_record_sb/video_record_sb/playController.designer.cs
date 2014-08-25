@@ -16,10 +16,18 @@ namespace video_record_sb
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton btnDonePlaying { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIView movieController { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
+			if (btnDonePlaying != null) {
+				btnDonePlaying.Dispose ();
+				btnDonePlaying = null;
+			}
 			if (movieController != null) {
 				movieController.Dispose ();
 				movieController = null;
