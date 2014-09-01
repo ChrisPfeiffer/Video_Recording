@@ -96,7 +96,7 @@ namespace video_record_sb
 
 			session.SessionPreset = AVCaptureSession.PresetMedium;
 
-			Console.WriteLine ("about to start running session");
+			Console.WriteLine ("About to start running session");
 
 			session.StartRunning ();
 
