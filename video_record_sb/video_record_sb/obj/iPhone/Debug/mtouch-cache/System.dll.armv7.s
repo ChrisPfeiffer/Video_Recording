@@ -117,8 +117,13 @@ methods:
 	.no_dead_strip _System_CodeDom_Compiler_GeneratedCodeAttribute__ctor_string_string
 _System_CodeDom_Compiler_GeneratedCodeAttribute__ctor_string_string:
 
-	.byte 128,64,45,233,13,112,160,225,0,1,45,233,20,208,77,226,0,0,141,229,4,16,141,229,8,32,141,229,4,16,157,229
-	.byte 0,0,157,229,8,16,128,229,8,16,157,229,12,16,128,229,20,208,141,226,0,1,189,232,128,128,189,232
+	.byte 128,64,45,233,13,112,160,225,32,1,45,233,8,208,77,226,0,80,160,225,0,16,141,229,4,32,141,229,0,0,157,229
+	.byte 8,0,133,229,8,16,133,226,161,20,160,225,0,32,159,229,0,0,0,234
+	.long _mono_aot_System_got - . -4
+	.byte 2,32,159,231,2,16,129,224,1,32,160,227,0,32,193,229,4,0,157,229,12,0,133,229,12,16,133,226,161,20,160,225
+	.byte 0,32,159,229,0,0,0,234
+	.long _mono_aot_System_got - . -4
+	.byte 2,32,159,231,2,16,129,224,1,32,160,227,0,32,193,229,8,208,141,226,32,1,189,232,128,128,189,232
 
 Lme_0:
 .text
@@ -191,14 +196,14 @@ ex_info_offsets:
 	.align 3
 unwind_info:
 
-	.byte 18,12,13,0,72,14,8,135,2,68,14,12,136,3,142,1,68,14,32
+	.byte 20,12,13,0,72,14,8,135,2,68,14,16,133,4,136,3,142,1,68,14,24
 .section __TEXT, __const
 	.align 3
 class_info_offsets:
 
 	.long 2,10,1,2
 	.short 0
-	.byte 37,7
+	.byte 58,7
 
 .text
 	.align 4
@@ -307,7 +312,7 @@ _mono_aot_file_info:
 	.align 2
 	.long unbox_trampolines_end
 
-	.long 4,20,1,2,10,387000831,0,67
+	.long 4,20,1,2,10,387000831,0,88
 	.long 0,0,0,0,0,0,0,0
 	.long 0,0,0,0,128,4,4,14
 	.long 0,0,0,0,0
@@ -320,9 +325,9 @@ _mono_aot_module_System_info:
 	.align 3
 blob:
 
-	.byte 0,0,0,12,0,39,42,47,2,0,26,48,36,60,208,0,0,13,4,208,0,0,13,8,208,0,0,13,0,0,3,8
-	.byte 36,7,8,6,4,0,128,144,8,0,0,1,4,128,160,16,0,0,4,193,0,7,168,193,0,5,161,193,0,7,164,193
-	.byte 0,5,165,98,111,101,104,109,0
+	.byte 0,0,0,12,0,39,42,47,2,0,47,116,32,128,128,208,0,0,13,0,208,0,0,13,4,5,0,15,8,32,0,4
+	.byte 0,4,0,4,0,16,0,8,0,4,7,4,0,4,0,4,0,4,0,16,0,8,0,4,6,0,0,128,144,8,0,0
+	.byte 1,4,128,160,16,0,0,4,193,0,7,168,193,0,5,161,193,0,7,164,193,0,5,165,115,103,101,110,0
 .section __TEXT, __const
 	.align 3
 Lglobals_hash:
@@ -424,17 +429,17 @@ LDIFF_SYM15=LTDIE_0 - Ldebug_info_start
 
 LDIFF_SYM16=LTDIE_0_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM16
-	.byte 2,125,0,3
+	.byte 1,85,3
 	.asciz "tool"
 
 LDIFF_SYM17=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM17
-	.byte 2,125,4,3
+	.byte 2,125,0,3
 	.asciz "version"
 
 LDIFF_SYM18=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM18
-	.byte 2,125,8,0
+	.byte 2,125,4,0
 
 .section __DWARF, __debug_frame,regular,debug
 
@@ -448,7 +453,7 @@ Lfde0_start:
 
 LDIFF_SYM20=Lme_0 - _System_CodeDom_Compiler_GeneratedCodeAttribute__ctor_string_string
 	.long LDIFF_SYM20
-	.byte 12,13,0,72,14,8,135,2,68,14,12,136,3,142,1,68,14,32
+	.byte 12,13,0,72,14,8,135,2,68,14,16,133,4,136,3,142,1,68,14,24
 	.align 2
 Lfde0_end:
 
@@ -480,7 +485,7 @@ Ldebug_line_header_end:
 	.byte 0,5,2
 	.long _System_CodeDom_Compiler_GeneratedCodeAttribute__ctor_string_string
 
-	.byte 3,39,4,2,1,3,39,2,36,1,131,2,16,1,0,1,1,0,1,1
+	.byte 3,39,4,2,1,3,39,2,32,1,3,1,2,44,1,2,52,1,0,1,1,0,1,1
 Ldebug_line_end:
 .text
 	.align 3

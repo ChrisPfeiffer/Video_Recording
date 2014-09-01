@@ -17,6 +17,17 @@ namespace video_record_sb
 	{
 		Boolean weAreRecording;
 		AVCaptureMovieFileOutput output;
+		AVCaptureDevice device;
+		AVCaptureDevice audioDevice;
+
+		AVCaptureDeviceInput input;
+		AVCaptureDeviceInput audioInput;
+		AVCaptureSession session;
+
+		AVCaptureVideoPreviewLayer previewlayer;
+
+
+
 		public recordController (IntPtr handle) : base (handle)
 		{
 		}
@@ -27,44 +38,50 @@ namespace video_record_sb
 			weAreRecording = false;
 			lblError.Hidden = true;
 
-			Console.WriteLine ("here");
 			btnStartRecording.SetTitle("Start Recording", UIControlState.Normal);
 
-
-			//assign eventhandler to record toggler
-
-
 			//Set up session
-			AVCaptureSession session = new AVCaptureSession ();
+			session = new AVCaptureSession ();
 
 
 			//Set up inputs and add them to the session
 			//this will only work if using a physical device!
-			AVCaptureDevice device;
-			AVCaptureDeviceInput input;
+
+			Console.WriteLine ("getting device inputs");
 			try{
-			device = AVCaptureDevice.DefaultDeviceWithMediaType (AVMediaType.Video);
-			input = AVCaptureDeviceInput.FromDevice (device);
-				session.AddInput (input);}
+				//add video capture device
+				device = AVCaptureDevice.DefaultDeviceWithMediaType (AVMediaType.Video);
+				input = AVCaptureDeviceInput.FromDevice (device);
+				session.AddInput (input);
+
+				//add audio capture device
+				audioDevice = AVCaptureDevice.DefaultDeviceWithMediaType(AVMediaType.Audio);
+				audioInput = AVCaptureDeviceInput.FromDevice(audioDevice);
+				session.AddInput(audioInput);
+			
+			}
 			catch(Exception ex){
+				//show the label error.  This will always show when running in simulator instead of physical device.
 				lblError.Hidden = false;
 				return;
 			}
 
 
+
+
 			//Set up preview layer (shows what the input device sees)
-			AVCaptureVideoPreviewLayer previewlayer = new AVCaptureVideoPreviewLayer (session);
-			UIView myview = this.View;
-			previewlayer.Frame = myview.Bounds;
-			this.View.Layer.AddSublayer (previewlayer);
+			Console.WriteLine ("setting up preview layer");
+			previewlayer = new AVCaptureVideoPreviewLayer (session);
+			previewlayer.Frame = this.View.Bounds;
+		
 			//this code makes UI controls sit on top of the preview layer!  Allows you to just place the controls in interface builder
 			UIView cameraView = new UIView ();
+			cameraView = new UIView ();
+			cameraView.Layer.AddSublayer (previewlayer);
 			this.View.AddSubview (cameraView);
 			this.View.SendSubviewToBack (cameraView);
-			cameraView.Layer.AddSublayer (previewlayer);
 
-			//add output
-			//AVCaptureVideoDataOutput output = new AVCaptureVideoDataOutput ();
+			Console.WriteLine ("Configuring output");
 			output = new AVCaptureMovieFileOutput ();
 
 			long totalSeconds = 10000;
@@ -78,6 +95,8 @@ namespace video_record_sb
 			}
 
 			session.SessionPreset = AVCaptureSession.PresetMedium;
+
+			Console.WriteLine ("about to start running session");
 
 			session.StartRunning ();
 
@@ -129,6 +148,27 @@ namespace video_record_sb
 				btnStartRecording.SetTitle("Start Recording", UIControlState.Normal);
 
 			}
+		}
+
+		public override void ViewWillDisappear (bool animated)
+		{
+			session.StopRunning ();
+			this.btnStartRecording.TouchUpInside -= startStopPushed;
+
+			foreach (var view in this.View.Subviews) {
+			
+				view.RemoveFromSuperview ();
+			}
+
+
+			base.ViewWillDisappear (animated);
+		}
+
+		protected override void Dispose(bool disposing)
+		{
+			Console.WriteLine (String.Format ("{0} controller disposed - {1}", this.GetType (), this.GetHashCode ()));
+
+			base.Dispose (disposing);
 		}
 	}
 }

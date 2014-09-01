@@ -45,14 +45,18 @@ namespace video_record_sb
 			base.ViewDidAppear (animated);
 		}
 
-		public override void ViewWillDisappear (bool animated)
-		{
-			base.ViewWillDisappear (animated);
-		}
+
 
 		public override void ViewDidDisappear (bool animated)
 		{
 			base.ViewDidDisappear (animated);
+		}
+
+		protected override void Dispose(bool disposing)
+		{
+			Console.WriteLine (String.Format ("{0} controller disposed - {1}", this.GetType (), this.GetHashCode ()));
+
+			base.Dispose (disposing);
 		}
 
 		#endregion

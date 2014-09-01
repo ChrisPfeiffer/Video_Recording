@@ -23,5 +23,7 @@
 	7.1 \
 	-targetver \
 	7.0 \
+	--sgen \
+	--new-refcount \
 	--abi=armv7 \
 	/Users/christopherpfeiffer/Projects/Video_Recording/video_record_sb/video_record_sb/bin/iPhone/Debug/video_record_sb.exe \

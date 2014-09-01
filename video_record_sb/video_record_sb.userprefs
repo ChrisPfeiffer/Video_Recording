@@ -1,14 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="video_record_sb/video_record_sbViewController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.Christopher Pfeiffer’s iPad" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="video_record_sb/recordController.cs">
     <Files>
       <File FileName="video_record_sb/AppDelegate.cs" Line="1" Column="1" />
-      <File FileName="video_record_sb/Main.cs" Line="17" Column="1" />
-      <File FileName="video_record_sb/video_record_sbViewController.cs" Line="122" Column="32" />
-      <File FileName="video_record_sb/video_record_sbViewController.designer.cs" Line="1" Column="1" />
-      <File FileName="video_record_sb/Entitlements.plist" />
-      <File FileName="video_record_sb/EmptyClass.cs" Line="1" Column="1" />
-      <File FileName="video_record_sb/movieController.cs" Line="41" Column="1" />
+      <File FileName="video_record_sb/Main.cs" Line="1" Column="1" />
+      <File FileName="video_record_sb/video_record_sbViewController.cs" Line="30" Column="30" />
+      <File FileName="video_record_sb/recordController.cs" Line="5" Column="5" />
+      <File FileName="video_record_sb/recordController.designer.cs" Line="1" Column="1" />
+      <File FileName="video_record_sb/playController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
